@@ -19,5 +19,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - name: Check aws cli
-        run: aws --version && aws sts get-caller-identity --query Account --output text
+      - name: Hello world action step
+        id: hello
+        uses: actions/docker_action@v2
+        with:
+          who-to-greet: 'Mona the Octocat'
+      # Use the output from the `hello` step
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.time }}"
