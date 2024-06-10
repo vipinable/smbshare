@@ -1,5 +1,5 @@
 #Base  image
-FROM docker.io/debin:stable
+FROM ghcr.io/pteroforge/debian:11-bullseye
 
 # Install samba packages
 RUN apt update && apt install -y samba
