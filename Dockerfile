@@ -1,5 +1,5 @@
 #Base  image
-FROM ghcr.io/pteroforge/debian:11-bullseye
+FROM ghcr.io/pteroforge/debian:10-buster
 
 # Install samba packages
 RUN apt update && apt install -y samba
