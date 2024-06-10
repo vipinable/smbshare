@@ -1,5 +1,5 @@
 #Base  image
-FROM hub.docker.com/debin:stable
+FROM docker.io/debin:stable
 
 # Install samba packages
 RUN apt update && apt install -y samba
