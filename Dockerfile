@@ -4,6 +4,8 @@ FROM ghcr.io/jitesoft/alpine
 #Set default shell
 SHELL ["/bin/ash"]
 
+RUN date
+
 # upgrade base system and install samba and supervisord
 RUN apk --no-cache upgrade && apk --no-cache add samba samba-common-tools supervisor
 
