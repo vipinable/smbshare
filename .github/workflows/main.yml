@@ -44,6 +44,7 @@ jobs:
           context: .
           push: true
           platforms: linux/arm64
+          base_image: raspios_lite_arm64:latest
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
       - name: Generate artifact attestation
