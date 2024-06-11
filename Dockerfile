@@ -5,4 +5,5 @@ FROM ghcr.io/jitesoft/alpine
 #RUN apk add samba
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
-CMD ["rc-service", "samba", "start"]
+#CMD ["rc-service", "samba", "start"]
+CMD ["/bin/ash"]
