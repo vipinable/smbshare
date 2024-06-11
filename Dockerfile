@@ -1,5 +1,5 @@
 #Base  image
-FROM ghcr.io/pteroforge/debian:10-buster
+FROM ghcr.io/jitesoft/alpine
 
 # Install samba packages
 RUN apt update && apt install -y samba
