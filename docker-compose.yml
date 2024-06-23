@@ -1,0 +1,10 @@
+services:
+  smbdrive:
+    container_name: smbdrive
+    image: smbshare:2024.6.16                      
+    volumes:
+      - /smbdrive:/smbdrive
+      - /home/pi/.aws:/root/.aws
+    restart: unless-stopped
+    privileged: true
+    network_mode: host
