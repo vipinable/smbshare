@@ -1,6 +1,6 @@
 name: build pipeline
 on:
-  push:
+  #push:
     #branches:
     #- main
   # Manually trigger from Actions tab
